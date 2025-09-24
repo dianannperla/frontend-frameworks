@@ -10,7 +10,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.jsx?$/, 
         exclude: /node_modules/, // Exclude node_modules directory
         use: {
           loader: 'babel-loader',
@@ -26,7 +26,7 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   devServer: {
-    static: path.join(__dirname, 'public'), // Static file serving
+    static: path.join(__dirname, 'dist'), // Updated static file serving directory
     compress: true,
     port: 9000,
     hot: true // Enable hot reloading
