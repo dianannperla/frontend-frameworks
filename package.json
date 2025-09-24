@@ -1,0 +1,24 @@
+{
+  "name": "frontend-frameworks",
+  "version": "1.0.0",
+  "description": "Bộ công cụ dành cho các lập trình viên để phát triển giao diện người dùng.",
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1",
+    "babel-loader": "^8.2.3",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5"
+  },
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "Bạn", 
+  "license": "MIT"
+}
