@@ -10,7 +10,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/, 
+        test: /.jsx?$/, 
         exclude: /node_modules/, // Exclude node_modules directory
         use: {
           loader: 'babel-loader',
@@ -18,6 +18,10 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
+      },
+      {
+        test: /.css$/, // Added rule for CSS files
+        use: ['style-loader', 'css-loader'],
       }
     ]
   },
