@@ -4,8 +4,8 @@
   "description": "Bộ công cụ dành cho các lập trình viên để phát triển giao diện người dùng.",
   "main": "src/index.js",
   "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "webpack": "^5.64.0",
@@ -19,6 +19,6 @@
     "start": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
-  "author": "Bạn Nguyễn", 
+  "author": "Bạn Nguyễn",
   "license": "MIT"
 }
