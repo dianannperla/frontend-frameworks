@@ -19,6 +19,6 @@
     "start": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
-  "author": "Bạn Nguyễn",
+  "author": "Nguyễn Bạn",
   "license": "MIT"
 }
