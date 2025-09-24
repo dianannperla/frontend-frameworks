@@ -10,7 +10,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/, // Chỉ xử lý file JSX
+        test: \/\.jsx?$/,
         exclude: /node_modules/, // Bỏ qua thư mục node_modules
         use: {
           loader: 'babel-loader',
@@ -26,7 +26,7 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
+    static: path.join(__dirname, 'public'), // Updated to use 'static' field
     compress: true,
     port: 9000,
     hot: true // Enable hot reloading
