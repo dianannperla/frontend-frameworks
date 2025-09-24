@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[hash].js',
-    publicPath: '/dist/',
+    publicPath: '/', // Updated publicPath for resource loading
   },
   module: {
     rules: [
